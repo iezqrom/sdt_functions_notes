@@ -1,8 +1,4 @@
-import pandas as pd
-from scipy.stats import norm
-import math
 import numpy as np
-Z = norm.ppf
 
 def sdt_setup(n_trials, conds):
     """

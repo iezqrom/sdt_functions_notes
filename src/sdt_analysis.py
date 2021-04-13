@@ -109,5 +109,18 @@ def SDTAprime(hits, misses, fas, crs):
     out['Aprime'] = 0.5 + (np.sign(hit_rate - fa_rate) * (((hit_rate - fa_rate)**2 + abs(hit_rate - fa_rate))/(4*max(hit_rate, fa_rate) - 4*hit_rate*fa_rate)))  # adapted 
     out['hit_rate'] = hit_rate
     out['fa_rate'] = fa_rate
-    
     return(out)
+
+
+
+
+
+
+
+# Personality stable, but it actually changes thorughout time
+# What different data then?
+
+# causal inference, mention examples that you've read
+
+# make it clearer what you've done
+# mention you've using git/github

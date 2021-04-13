@@ -3,10 +3,13 @@ This repository contains Python code to facilitate SDT data collection, parsing 
 
 # SDT references
 - [Calculation of signal detection theory measures](https://link.springer.com/content/pdf/10.3758%2FBF03207704.pdf)
+- [Signal detection measures cannot distinguish perceptual biases from response biases](https://journals.sagepub.com/doi/10.1068/p7908)
 - [Nonparametric Measures of Sensory Efficiency for Sustained Monitoring Tasks](https://journals.sagepub.com/doi/10.1177/001872087902100109)
 - [Audiovisual Integration Enhances Stimulus Detection Performance in Mice](https://www.frontiersin.org/articles/10.3389/fnbeh.2018.00231/full)
 
 # More SDT code
+- [metad Py by LegrandNico](https://github.com/LegrandNico/metadPy)
+- [pysdt - Signal Detection Theory Measures](https://pychoacoustics.readthedocs.io/en/latest/pysdt.html)
 - [Signal detection simulation by mwaskom](https://gist.github.com/mwaskom/39e43ac049fd26679bae)
 - [Extended Signal Detection Theory with Decision Value Correlation by fruendlab](https://github.com/fruendlab/esdt)
 - [DetectionTheory.jl by sam81](https://github.com/sam81/DetectionTheory.jl)
@@ -16,5 +19,3 @@ This repository contains Python code to facilitate SDT data collection, parsing 
 - [Analyses of Memory Contextualization Task in SAM study by mscep](https://github.com/mscsep/SAM_MCT)
 - [SDT metrics by rogerlew](https://github.com/rogerlew/sdt-metrics)
 - [Detection, Estimation and Learning by docnok](https://github.com/docnok/detection-estimation-learning)
-- [metad Py by LegrandNico](https://github.com/LegrandNico/metadPy)
-- [pysdt - Signal Detection Theory Measures](https://pychoacoustics.readthedocs.io/en/latest/pysdt.html)

@@ -4,17 +4,21 @@ import math
 import numpy as np
 Z = norm.ppf
 
-def tableTosdtDoble(table, num_sdt):
-    table_single_sdt = table.loc[table['Touch'] == num_sdt]
+def tableTosdtDoble(table, num_sdt, name_cond_manipulation, name_cond_interest, name_cond_responses = 'Responses'):
+    """
+        Function to parse data from a pandas dataframe containing all responses for a subject to
+        4 dataframes containing the data for each 4 conditions in a 2x2 sdt design.
+    """
+    table_single_sdt = table.loc[table[name_cond_manipulation] == num_sdt]
 
-    table_cold = table_single_sdt.loc[table_single_sdt['Cold'] == 1]
-    table_nocold = table_single_sdt.loc[table_single_sdt['Cold'] == 0]
+    table_present = table_single_sdt.loc[table_single_sdt[name_cond_interest] == 1]
+    table_absent = table_single_sdt.loc[table_single_sdt[name_cond_interest] == 0]
 
-    present_yes = table_cold.loc[table_cold['Responses'] == 1]
-    present_no = table_cold.loc[table_cold['Responses'] == 0]
-     
-    absent_yes = table_nocold.loc[table_nocold['Responses'] == 1]
-    absent_no = table_nocold.loc[table_nocold['Responses'] == 0]
+    present_yes = table_present.loc[table_present[name_cond_responses] == 1]
+    present_no = table_present.loc[table_present[name_cond_responses] == 0]
+
+    absent_yes = table_absent.loc[table_absent[name_cond_responses] == 1]
+    absent_no = table_absent.loc[table_absent[name_cond_responses] == 0]
 
     return present_yes, present_no, absent_yes, absent_no
 
